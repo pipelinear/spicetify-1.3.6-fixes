@@ -1,0 +1,482 @@
+.button-module__button___hf2qg_marketplace {
+  color: var(--spice-subtext);
+}
+
+.os-scrollbar {
+  --os-handle-border-radius: 16px !important;
+  --os-size: 8px !important;
+}
+
+.main-entityHeader-backgroundColor {
+  background-color: #00000000 !important;
+}
+
+.main-home-homeHeader {
+  background-color: #00000000 !important;
+  background-image: none !important;
+}
+
+/* ---------- layout ---------- */
+
+/* the sky */
+.starrynight-top-container {
+  background: linear-gradient(180deg, var(--spice-sidebar-alt) 0%, var(--spice-sidebar) 100%) !important;
+  overflow: hidden;
+  /* playbar moves to the top of the right column, above the right sidebar */
+  grid-template:
+    "top-banner   top-banner top-banner"      auto
+    "global-nav   global-nav global-nav"      auto
+    "left-sidebar main-view  now-playing-bar" auto
+    "left-sidebar main-view  right-sidebar"   1fr
+    / auto 1fr auto !important;
+}
+
+/* overlays/popovers used to end at the (old, bottom) playbar row; span everything instead */
+.starrynight-top-container > div:has(> #floating-ui-popover-layer),
+.starrynight-top-container > div:has(> .VTO__modal-slot) {
+  grid-row: 2 / -1 !important;
+}
+
+.starrynight-top-container > .Root__lyrics-cinema,
+.starrynight-top-container > #lyrics-cinema {
+  grid-row: 1 / -1 !important;
+}
+
+#global-nav-bar,
+#Desktop_LeftSidebar_Id,
+#Desktop_LeftSidebar_Id nav > div,
+#Desktop_LeftSidebar_Id .YourLibraryX,
+#main-view,
+.starrynight-rightbar,
+.starrynight-rightbar .Root__right-sidebar-peek,
+.starrynight-playbar {
+  background: #00000000 !important;
+}
+
+/* right sidebar panels (queue, now playing view...) were opaque black */
+.starrynight-rightbar aside,
+.starrynight-rightbar aside::before,
+.starrynight-rightbar aside::after,
+.starrynight-rightbar .Root__right-sidebar-overlayWrapper > div:not(.Root__right-sidebar-peekContent),
+.starrynight-rightbar .Root__right-sidebar-fauxMainViewEnd > div {
+  background: #00000000 !important;
+}
+
+/* collapsed sidebar: the (now transparent) strip used to cover the peeking content */
+.starrynight-rightbar .Root__right-sidebar-peek:not(.Root__right-sidebar-expanded):not(:hover)
+  .Root__right-sidebar-peekContent {
+  opacity: 0;
+}
+
+/* all StarryNight schemes use a light button color, so primary buttons need dark text
+   (e.g. Full Screen's "Switch to TV Mode" / "Exit" were white on cream) */
+.main-button-primary {
+  color: #000000 !important;
+}
+
+/* keep main view out of the playbar column even when the right sidebar is closed */
+#main-view {
+  grid-column: main-view !important;
+}
+
+.starrynight-rightbar {
+  min-height: 0;
+}
+
+/* ---------- misc transparency (some hashed classes may be stale on newer Spotify) ---------- */
+
+.ffFwfKcPDbmAPLXzxzKq:before {
+  background-color: #00000000 !important;
+}
+
+.I0bVSxvqA3rm5HvciMap {
+  --bgColor: #00000000 !important;
+}
+
+.I0bVSxvqA3rm5HvciMap::after {
+  --bgColor: #00000000 !important;
+}
+
+.PeLrpasyfBW8ql_bmoAi {
+  background-color: #00000000 !important;
+  background-image: none !important;
+}
+
+.PkOz5g82CaoKk1J3GX0e  {
+  background-color: #00000000 !important;
+  background-image: none !important;
+}
+
+.sv5suqIPUwjgUF_BzM41 {
+  transform: none !important;
+}
+
+.main-topBar-background {
+  background-color: var(--spice-highlight) !important;
+}
+
+.main-yourLibraryX-libraryContainer {
+  background: none !important;
+}
+
+.main-trackList-trackListRow:hover {
+  background-color: var(--spice-highlight);
+}
+
+.main-playPauseButton-button {
+  background-color: var(--spice-button);
+}
+
+.rX_OmqCngvY5ZCoYBZgb {
+  background-color: #00000000 !important;
+}
+
+.main-yourLibraryX-entryPoints {
+  background-color: #00000000 !important;
+}
+
+.marketplace-header {
+  background-color: #00000000 !important;
+}
+
+.EmeHQXR87mUskYK6xEde {
+  background-color: #00000000 !important;
+}
+
+.lyrics-lyrics-background {
+  background-color: #00000000 !important;
+}
+
+.main-actionBarBackground-background {
+  background-image: none;
+  background-color: #00000000 !important;
+  animation: none !important;
+  -webkit-animation: none !important;
+}
+
+.main-entityHeader-overlay {
+  background: none !important;
+}
+
+.main-entityHeader-background.main-entityHeader-gradient {
+  opacity: 0.5;
+  animation: none !important;
+}
+
+.main-entityHeader-background.main-entityHeader-overlay:after {
+  background-image: none !important;
+  animation: none !important;
+  -webkit-animation: none !important;
+}
+
+.pUNc2aOeOQANHrhYa1GU .RDZ61ETnag1ilfZTkVxe {
+  color: #00000000 !important;
+}
+
+.playlist-playlist-playlistContent {
+  background: #00000000 !important;
+}
+
+.UrfDp0_mKGL9hkfh9g_R,
+.UrfDp0_mKGL9hkfh9g_R:before,
+.mzBZbIt7NDzzTffimVhn,
+.WBFaUw_oOfN2m4aTxggt,
+.main-nowPlayingView-contextItemInfo:before,
+.playlist-playlist-actionBarBackground-background,
+.main-entityHeader-backgroundColor {
+  background: none !important;
+}
+
+.sl_aPp6GDg05ItSfmsS7 {
+  display: none;
+}
+
+.main-tag-container {
+  color: var(--spice-sidebar);
+}
+
+/* ---------- now playing panel ---------- */
+
+/* width 0 + min-width 100%: the right sidebar alone sizes the column, the panel fills it.
+   theme.js sets an inline width when the right sidebar is closed. */
+.starrynight-playbar {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 0;
+  min-width: max(100%, 280px);
+}
+
+[data-testid="now-playing-bar"] {
+  height: auto !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+/* stack left / center / right sections vertically */
+[data-testid="now-playing-bar"] > div {
+  flex-direction: column !important;
+  height: auto !important;
+  gap: 8px;
+}
+
+[data-testid="now-playing-bar"] > div > div {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  justify-content: center !important;
+}
+
+/* cover art on top, title + heart centered below */
+[data-testid="now-playing-widget-v2"] {
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  width: 100%;
+}
+
+[data-testid="now-playing-widget-v2"] [data-testid="cover-art-container"] {
+  flex: 0 0 100% !important;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  margin: 0 !important;
+}
+
+[data-testid="now-playing-widget-v2"] [data-testid="cover-art-container"] > div,
+[data-testid="now-playing-widget-v2"] [data-testid="cover-art-container"] [data-testid="cover-drop-target"] {
+  height: 220px !important;
+  width: 220px !important;
+  background-color: #00000000 !important;
+}
+
+[data-testid="now-playing-widget-v2"] [data-testid="cover-art-container"] img {
+  height: 220px !important;
+  width: 220px !important;
+  border-radius: 50% !important;
+  object-fit: cover;
+  animation: spin 25s linear infinite;
+  animation-play-state: paused;
+  box-shadow: 0 0 5px 5px var(--spice-text);
+}
+
+[data-testid="now-playing-bar"]:has([data-testid="control-button-playpause"][aria-label="Pause"])
+  [data-testid="cover-art-container"] img {
+  animation-play-state: running !important;
+}
+
+/* clip every layer in the cover slot to the circle (hover overlays, placeholders) */
+[data-testid="now-playing-widget-v2"] [data-testid="cover-art-container"] * {
+  border-radius: 50% !important;
+}
+
+[data-testid="now-playing-widget-v2"] [data-testid="cover-art-container"] > div {
+  overflow: hidden;
+  border-radius: 50% !important;
+  box-shadow: 0 0 5px 5px var(--spice-text);
+}
+
+[data-testid="now-playing-widget-v2"] [data-testid="cover-art-container"] img {
+  box-shadow: none !important;
+}
+
+/* progress bar above the buttons */
+[data-testid="player-controls"] {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  width: 100% !important;
+}
+
+[data-testid="player-controls"] > div {
+  width: 100% !important;
+}
+
+/* extra controls (lyrics, queue, volume...) */
+[data-testid="now-playing-bar"] > div > div:last-child > div {
+  justify-content: space-evenly !important;
+  width: 100%;
+}
+
+.starrynight-bg-container {
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.ffFwfKcPDbmAPLXzxzKq {
+  background-color: #00000000 !important;
+}
+
+button[data-testid="cover-art-button"] {
+  height: 220px !important;
+  width: 220px !important;
+  margin: auto;
+  background-color: #00000000;
+  box-shadow: 0 0 0px var(--spice-rgb-shadow);
+  display: contents;
+}
+
+@keyframes twinkle1 {
+  0% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  20% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  40% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  60% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  80% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  100% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+}
+
+@keyframes twinkle2 {
+  0% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  20% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  40% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  60% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  80% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  100% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+}
+
+@keyframes twinkle3 {
+  0% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  20% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  40% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  60% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  80% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  100% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+}
+
+@keyframes twinkle4 {
+  0% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  20% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  40% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  60% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  80% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  100% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+Pure CSS Shooting Star Animation Effect Copyright (c) 2021 by Delroy Prithvi (https://codepen.io/delroyprithvi/pen/LYyJROR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+.shootingstar {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--spice-shooting-star);
+  border-radius: 50%;
+  animation: animate 3s linear;
+  left: initial;
+  z-index: -1;
+}
+
+.shootingstar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--spice-shooting-star), transparent);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(315deg) translateX(-1500px);
+    opacity: 0;
+  }
+}

@@ -74,6 +74,17 @@
   color: #000000 !important;
 }
 
+/* page headers / action bars are painted with the cover art color (playlist, album, artist) */
+[data-testid="entity-header"] > div:not(.main-entityHeader-contentWrapper),
+.playlist-playlist-playlistContent > div:first-child,
+[data-testid$="-page"] > [data-testid="entity-header"] + div,
+[data-testid="artist-page"] [data-testid="entity-header"] + div,
+[data-testid="artist-page"] [data-testid="entity-header"] + div > div:first-child,
+[data-testid="overscroll-background"] {
+  background-color: #00000000 !important;
+  background-image: none !important;
+}
+
 /* keep main view out of the playbar column even when the right sidebar is closed */
 #main-view {
   grid-column: main-view !important;
